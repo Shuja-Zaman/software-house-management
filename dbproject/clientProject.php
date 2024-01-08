@@ -82,6 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sqlBudget = "INSERT INTO project_budget (project_id, budget) VALUES ('$projectId', '$budget')";
             if ($conn->query($sqlBudget) === TRUE) {
                 echo "New project created successfully";
+                header("Location: clientPage.php");
             } else {
                 echo "Error inserting into project_budget: " . $sqlBudget . "<br>" . $conn->error;
             }

@@ -46,7 +46,7 @@ $completedProjectsResult = $conn->query($completedProjectsQuery);
 
     <style>
         body {
-            background-color: black;
+            background-color: whitesmoke;
         }
 
         h1 {
@@ -54,24 +54,19 @@ $completedProjectsResult = $conn->query($completedProjectsQuery);
             text-align: center;
             margin-top: 2rem;
             margin-bottom: 2rem;
-            background: -webkit-linear-gradient(#657, #444);
+            background: -webkit-linear-gradient(#337, #555);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         h2 {
-            color: white;
             margin-bottom: 1rem;
-        }
-
-        p {
-            color: white;
         }
 
         .project-section1 {
             width: 50%;
             padding-left: 3rem;
-            border-right: 2px solid white;
+            border-right: 2px solid black;
         }
 
         .project-section2 {
@@ -82,9 +77,11 @@ $completedProjectsResult = $conn->query($completedProjectsQuery);
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+<nav class="navbar sticky-top navbar-expand-lg bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">RMS <sup>admin</sup></a>
+        <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
+  <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+</svg>RMS <sup>admin</sup></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -106,7 +103,7 @@ $completedProjectsResult = $conn->query($completedProjectsQuery);
                         <a class="nav-link active" href="contact.php">Contact us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active btn btn-outline-primary" href="logout.php">Log out</a>
+                        <a class="nav-link active btn btn-outline-primary text-light" href="logout.php">Log out</a>
                     </li>
                     
                 </ul>
@@ -116,7 +113,7 @@ $completedProjectsResult = $conn->query($completedProjectsQuery);
 </nav>
 
 <h1>Admin Dashboard</h1>
-
+<hr>
 <div class="content d-flex">
 
     <div class="project-section1">

@@ -8,7 +8,7 @@
 
     <style>
        body{
-        background-color: black;
+        background-color:whitesmoke;
        }
 
        h1 {
@@ -21,18 +21,17 @@
             -webkit-text-fill-color: transparent;
         }
 
-        p{
-            color: white;
-        }
 
     </style>
 </head>
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">RMS <sup>employee</sup></a>
+    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
+  <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+</svg>RMS <sup>employee</sup></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,7 +54,7 @@
           <a class="nav-link active" href="contact.php">Contact us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active btn btn-outline-primary" href="logout.php">Log out</a>
+          <a class="nav-link active btn btn-outline-primary text-light" href="logout.php">Log out</a>
         </li>
       </ul>
       </span>
@@ -65,6 +64,7 @@
 
 <div class="details px-5">
     <h1 class="">Working Projects</h1>
+    <hr>
     
 
     <?php
@@ -116,10 +116,10 @@ if ($employeeResult->num_rows > 0) {
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            echo '<div class="project mt-3 bg-light rounded-4 text-light px-2 pt-3 pb-1">';
-            echo "<p class='text-dark'>Client Name: " . $row["first_name"] . "</p>";
-            echo "<p class='text-dark'>Description: " . $row["descript"] . "</p>";
-            echo "<p class='text-dark'>Assigned Date: " . $row["assigned_date"] . "</p>";
+            echo '<div class="project mt-3 bg-dark rounded-4  px-2 pt-3 pb-1">';
+            echo "<p class='text-light'>Client Name: " . $row["first_name"] . "</p>";
+            echo "<p class='text-light'>Description: " . $row["descript"] . "</p>";
+            echo "<p class='text-light'>Assigned Date: " . $row["assigned_date"] . "</p>";
             echo "<p class='text-danger'>Due Date: " . $row["due_date"] . "</p>";
             echo '</div>';
         }

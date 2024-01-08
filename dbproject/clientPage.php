@@ -28,9 +28,11 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar fixed navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <nav class="navbar sticky-top navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">RMS <sup>client</sup></a>
+    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
+  <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+</svg>RMS <sup>client</sup></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,7 +55,7 @@
           <a class="nav-link active" href="contact.php">Contact us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active btn btn-outline-primary" href="logout.php">Log out</a>
+          <a class="nav-link active btn btn-outline-primary text-white" href="logout.php">Log out</a>
         </li>
       </ul>
       </span>
@@ -74,6 +76,7 @@
             <label for="validationDefault02" class="form-label">Budget</label>
             <input type="number" name="budget" class="form-control" id="validationDefault02" placeholder="budget" required>
         </div>
+        
         <div class="col-md-12">
             <label for="validationDefault02" class="form-label">Due Date</label>
             <input type="date" name="duedate" class="form-control" id="validationDefault02" required>
