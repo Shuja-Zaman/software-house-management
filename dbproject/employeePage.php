@@ -54,6 +54,9 @@
           <a class="nav-link active" href="contact.php">Contact us</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active btn btn-outline-success text-light me-3" href="employeeEditProfile.php">Edit Profile</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active btn btn-outline-primary text-light" href="logout.php">Log out</a>
         </li>
       </ul>
